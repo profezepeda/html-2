@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #FFF;
+    background-color: #000;
+    padding: 10px;
+}
+
+ul {
+    list-style: square;
+}
+
+.error {
+    background-color: #FF0000 !important;
+}
+.tipoparrafo1   {
+    margin-bottom: 30px;
+    text-align: justify;
+    width: 45%;
+    float: left;
+    position: relative;
+    margin-left: 3%;
+}
+.hobbies    {
+    width: 100%;
+    position: absolute;
+}
