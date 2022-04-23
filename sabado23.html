@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sábado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>    
+    <style>
+        .etiqueta {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sábado</h1>
+        <div class="row">
+            <div class="col-2 etiqueta">Nombre</div>
+            <div class="col-9" id="nombre"></div>
+        </div>
+        <div class="row">
+            <div class="col-2 etiqueta">Apellido</div>
+            <div class="col-9" id="apellido"></div>
+        </div>
+        <div class="row">
+            <div class="col-2 etiqueta">Edad</div>
+            <div class="col-9" id="edad"></div>
+        </div>
+        <div class="row">
+            <div class="col-2 etiqueta">Estatura</div>
+            <div class="col-9" id="estatura"></div>
+        </div>
+        <div class="row">
+            <div class="col-2 etiqueta">Dirección</div>
+            <div class="col-9" id="direccion"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="personaNombre" placeholder="nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="personaApellido" placeholder="apellido">
+                    <label for="floatingInput">Apellido</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" onclick="agregarPersona()">Agregar</button>
+        <div id="personas" class="mt-3"></div>
+
+    </div>
+
+
+
+
+    <script src="js/sabado23.js"></script>
+</body>
+</html>
