@@ -41,21 +41,25 @@
             <div class="col-9" id="direccion"></div>
         </div>
         <hr>
-        <div class="row">
-            <div class="col-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="personaNombre" placeholder="nombre">
-                    <label for="floatingInput">Nombre</label>
+        <form id="formularioPersona" onsubmit="return false;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="personaNombre" 
+                            placeholder="nombre" maxlength="15" required>
+                        <label for="floatingInput">Nombre</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="personaApellido" 
+                            placeholder="apellido" maxlength="15" required>
+                        <label for="floatingInput">Apellido</label>
+                    </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="personaApellido" placeholder="apellido">
-                    <label for="floatingInput">Apellido</label>
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-primary" onclick="agregarPersona()">Agregar</button>
+            <button type="submit" class="btn btn-primary" onclick="agregarPersona()">Agregar</button>
+        </form>
         <div id="personas" class="mt-3"></div>
 
     </div>

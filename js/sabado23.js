@@ -34,14 +34,24 @@ function agregarTomas() {
 }
 
 function agregarPersona()   {
+    const personaNombre = document.getElementById("personaNombre").value;
+    const personaApellido = document.getElementById("personaApellido").value;
+
+    if (personaNombre == "" || personaApellido == "") {
+        return false;
+    }
+
     const nuevaPersona = {
         idpersona: personas.length + 1,
-        nombre: document.getElementById("personaNombre").value,
-        apellido: document.getElementById("personaApellido").value,
+        nombre: personaNombre,
+        apellido: personaApellido,
         edad: 24,
         estatura: 168
     }
     personas.push(nuevaPersona);
+    document.getElementById("personaNombre").value = ""
+    document.getElementById("personaApellido").value = ""
+
     cargarPersonas();
 }
 
